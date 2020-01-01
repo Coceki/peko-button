@@ -1,5 +1,11 @@
 <template>
   <v-container>
+    <!-- <v-row>
+        <div class="text-center">
+            <p>{{$t("ui.mediacontorl")}}</p>
+            <v-btn raised @click="stopPlay">{{$t("ui.stopplay")}}</v-btn>
+        </div>
+    </v-row> -->
     <v-row v-for="group in voices" :key="group">
       <v-col cols="12">
         <v-card>
@@ -31,11 +37,6 @@ export default {
       this.voice = item;
       audio.play();
     },
-    stopPlay() {
-      let player = document.getElementById("player");
-      player.pause();
-      this.voiceEnd();
-    }
   }
 };
 </script>

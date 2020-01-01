@@ -5,6 +5,13 @@
                 "Chinese": "笑声"
             },
             "voicelist": [{
+                    "name": "hahahahaha",
+                    "path": "hahahahaha.mp3",
+                    "translation": {
+                        "Chinese": "哈↑哈↑哈↑哈↑哈↑"
+                    }
+                },
+                {
                     "name": "hahahaha",
                     "path": "hahahaha.mp3",
                     "translation": {
@@ -17,7 +24,15 @@
                     "translation": {
                         "Chinese": "哈↑哈↑哈↑"
                     }
+                },
+                {
+                    "name": "hahahaha(echo)",
+                    "path": "hahahaha(echo).mp3",
+                    "translation": {
+                        "Chinese": "哈↑哈↑哈↑哈↑(回音)"
+                    }
                 }
+
             ]
         },
         {
@@ -32,6 +47,34 @@
                     "Chinese": "斯国一~"
                 }
             }]
+        },
+        {
+            "name": "others",
+            "translation": {
+                "Chinese": "通用"
+            },
+            "voicelist": [{
+                    "name": "benbenqia",
+                    "path": "benbenqia.mp3",
+                    "translation": {
+                        "Chinese": "笨笨恰~"
+                    }
+                },
+                {
+                    "name": "breathing",
+                    "path": "breathing.mp3",
+                    "translation": {
+                        "Chinese": "波纹呼吸"
+                    }
+                },
+                {
+                    "name": "istarted",
+                    "path": "istarted.mp3",
+                    "translation": {
+                        "Chinese": "我开动了"
+                    }
+                }
+            ]
         }
     ]
 }
