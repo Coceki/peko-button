@@ -1,0 +1,15 @@
+{
+    "groups": [{
+        "name": "hahaha",
+        "translation": {
+            "Chinese": "笑声"
+        },
+        "voicelist": [{
+            "name": "hahahaha",
+            "path": "hahahaha.mp3",
+            "translation": {
+                "Chinese": "哈↑哈↑哈↑哈↑"
+            }
+        }]
+    }]
+}

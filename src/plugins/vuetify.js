@@ -26,7 +26,7 @@ export default new Vuetify({
         themes: {
             light: {
                 primary: '#728bf3',
-                secondary: '#b0bec5',
+                secondary: '#FF9330',
             },
         },
     }
