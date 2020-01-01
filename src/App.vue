@@ -30,6 +30,7 @@
                 <v-container>
                   <v-row align="end">
                     作者：Coceki
+                    <v-btn icon @click="See('https://github.com/Coceki/peko-button')"><v-icon>mdi-github-circle</v-icon></v-btn>
                   </v-row>
                 </v-container>
               </v-flex>
@@ -74,6 +75,10 @@ export default {
         }
       }, 10);
     },
-  }
+    See (e) {
+        window.location.href = e
+      }
+    }
+  
 };
 </script>

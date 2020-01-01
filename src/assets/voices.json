@@ -1,15 +1,37 @@
 {
     "groups": [{
-        "name": "hahaha",
-        "translation": {
-            "Chinese": "笑声"
-        },
-        "voicelist": [{
-            "name": "hahahaha",
-            "path": "hahahaha.mp3",
+            "name": "hahaha",
             "translation": {
-                "Chinese": "哈↑哈↑哈↑哈↑"
-            }
-        }]
-    }]
+                "Chinese": "笑声"
+            },
+            "voicelist": [{
+                    "name": "hahahaha",
+                    "path": "hahahaha.mp3",
+                    "translation": {
+                        "Chinese": "哈↑哈↑哈↑哈↑"
+                    }
+                },
+                {
+                    "name": "hahaha",
+                    "path": "hahaha.mp3",
+                    "translation": {
+                        "Chinese": "哈↑哈↑哈↑"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "suprise",
+            "translation": {
+                "Chinese": "惊叹"
+            },
+            "voicelist": [{
+                "name": "sugoyi",
+                "path": "sugoyi.mp3",
+                "translation": {
+                    "Chinese": "斯国一~"
+                }
+            }]
+        }
+    ]
 }
