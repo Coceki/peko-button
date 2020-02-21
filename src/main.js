@@ -7,7 +7,8 @@ import VueI18n from 'vue-i18n'
 import zhHans from './assets/lang/zhHans'
 import en from './assets/lang/en'
 import ja from './assets/lang/ja'
-
+import VueCookies from 'vue-cookies'
+Vue.use(VueCookies)
 
 Vue.config.productionTip = false
 Vue.use(VueI18n);

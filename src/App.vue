@@ -59,6 +59,12 @@ export default {
   data: () => ({
     //
   }),
+  mounted(){
+    if (this.$cookies.isKey("Lang")){
+      this.$i18n.locale=this.$cookies.get("Lang");
+    
+    }
+  },
   methods: {
     handleScroll() {
       let scrolltop =

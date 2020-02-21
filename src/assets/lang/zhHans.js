@@ -11,6 +11,7 @@ module.exports = {
         orderlistnow: "当前的播放序列",
         playthislist: "播放序列",
         listempty: "你的序列还是空的哦peko~",
-        resetorder: "清空当前序列"
+        resetorder: "清空当前序列",
+        language: "语言"
     }
 }

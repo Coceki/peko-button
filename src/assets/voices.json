@@ -8,7 +8,7 @@
                     "name": "hahahahaha",
                     "path": "hahahahaha.mp3",
                     "translation": {
-                        "Chinese": "哈↑哈↑哈↑哈↑哈↑"
+                        "Chinese": "哈↑哈↑哈↓哈↓哈↓"
                     }
                 },
                 {
@@ -31,21 +31,30 @@
                     "translation": {
                         "Chinese": "哈↑哈↑哈↑哈↑(回音)"
                     }
+                },
+                {
+                    "name": "哈→哈→哈↗哈↑哈→哈→",
+                    "path": "哈→哈→哈↗哈↑哈→哈→.mp3",
+                    "translation": {
+                        "Chinese": "哈→哈→哈↗哈↑哈→哈→"
+                    }
                 }
 
             ]
         },
         {
-            "name": "suprise",
+            "name": "pekorap",
             "translation": {
-                "Chinese": "惊叹"
+                "Chinese": "PekoRap"
             },
             "voicelist": [{
-                "name": "sugoyi",
-                "path": "sugoyi.mp3",
+
+                "name": "H！色狼！不要碰！你的胖次几厘米",
+                "path": "H！色狼！不要碰！你的胖次几厘米.mp3",
                 "translation": {
-                    "Chinese": "斯国一~"
+                    "Chinese": "H！色狼！不要碰！你的胖次几厘米"
                 }
+
             }]
         },
         {
@@ -60,21 +69,150 @@
                         "Chinese": "笨笨恰~"
                     }
                 },
-                {
-                    "name": "breathing",
-                    "path": "breathing.mp3",
-                    "translation": {
-                        "Chinese": "波纹呼吸"
-                    }
-                },
+
                 {
                     "name": "istarted",
                     "path": "istarted.mp3",
                     "translation": {
                         "Chinese": "我开动了"
                     }
+                },
+                {
+                    "name": "不要乱看啊",
+                    "path": "不要乱看啊.mp3",
+                    "translation": {
+                        "Chinese": "不要乱看啊!"
+                    }
+                },
+                {
+                    "name": "请不要这样",
+                    "path": "请不要这样.mp3",
+                    "translation": {
+                        "Chinese": "请不要这样"
+                    }
+                },
+                {
+                    "name": "真的很H呢",
+                    "path": "真的很H呢.mp3",
+                    "translation": {
+                        "Chinese": "真的很H呢"
+                    }
+                },
+                {
+                    "name": "我可是偶像呢",
+                    "path": "我可是偶像呢.mp3",
+                    "translation": {
+                        "Chinese": "我可是偶像呢"
+                    }
+                },
+
+                {
+                    "name": "你们这帮人最差劲了",
+                    "path": "你们这帮人最差劲了.mp3",
+                    "translation": {
+                        "Chinese": "你们这帮人最差劲了"
+                    }
+                },
+
+                {
+                    "name": "明显不一样好吧",
+                    "path": "明显不一样好吧.mp3",
+                    "translation": {
+                        "Chinese": "明显不一样好吧"
+                    }
                 }
             ]
+        },
+        {
+            "name": "问候",
+            "translation": {
+                "Chinese": "问候"
+            },
+            "voicelist": [{
+                "name": "晚上好peko",
+                "path": "晚上好peko.mp3",
+                "translation": {
+                    "Chinese": "晚上好peko"
+                }
+            }]
+        },
+        {
+            "name": "语气",
+            "translation": {
+                "Chinese": "语气"
+            },
+            "voicelist": [{
+                "name": "波纹呼吸",
+                "path": "波纹呼吸.mp3",
+                "translation": {
+                    "Chinese": "波纹呼吸"
+                }
+            }]
+        },
+        {
+            "name": "名言",
+            "translation": {
+                "Chinese": "名言"
+            },
+            "voicelist": [{
+                    "name": "佩克拉喜欢在现实中看见别人流泪的样子",
+                    "path": "佩克拉喜欢在现实中看见别人流泪的样子.mp3",
+                    "translation": {
+                        "Chinese": "佩克拉喜欢在现实中看见别人流泪的样子"
+                    }
+                },
+                {
+                    "name": "佩克拉只是喜欢美丽的泪水啊",
+                    "path": "佩克拉只是喜欢美丽的泪水啊.mp3",
+                    "translation": {
+                        "Chinese": "佩克拉只是喜欢美丽的泪水啊"
+                    }
+                },
+                {
+                    "name": "佩克拉明明是以清楚健全偶像的身份活着的",
+                    "path": "佩克拉明明是以清楚健全偶像的身份活着的.mp3",
+                    "translation": {
+                        "Chinese": "佩克拉明明是以清楚健全偶像的身份活着的"
+                    }
+                },
+                {
+                    "name": "你们没有在佩克拉身上感受到色气吗",
+                    "path": "你们没有在佩克拉身上感受到色气吗.mp3",
+                    "translation": {
+                        "Chinese": "你们没有在佩克拉身上感受到色气吗"
+                    }
+                },
+                {
+                    "name": "这群家伙可能没有性欲这种东西",
+                    "path": "这群家伙可能没有性欲这种东西.mp3",
+                    "translation": {
+                        "Chinese": "这群家伙可能没有性欲这种东西"
+                    }
+                },
+                {
+                    "name": "你们就是喜欢看佩克拉吃瘪的样子对吧",
+                    "path": "你们就是喜欢看佩克拉吃瘪的样子对吧.mp3",
+                    "translation": {
+                        "Chinese": "你们就是喜欢看佩克拉吃瘪的样子对吧"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "suprise",
+            "translation": {
+                "Chinese": "惊叹"
+            },
+            "voicelist": [{
+                "name": "sugoyi",
+                "path": "sugoyi.mp3",
+                "translation": {
+                    "Chinese": "斯国一~"
+                }
+            }]
         }
+
+
+
     ]
 }

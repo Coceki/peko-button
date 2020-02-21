@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <v-fab-transition>
+      
       <v-btn
         class="mb-11"
         v-show="orderplaymode"
@@ -12,11 +13,18 @@
         fab
         @click="orderdialog=true"
       >
+      <v-badge
+          color="red"
+          content="6"
+        >
         <v-icon>mdi-reorder-horizontal</v-icon>
+      </v-badge>
       </v-btn>
+      
     </v-fab-transition>
+    
     <!---标题--->
-    <v-row align="center" justify="center">
+    <v-row class="mt-5" align="center" justify="center">
       <div class="text-center display-1 font-weight-bold">{{$t("ui.title")}}</div>
     </v-row>
     <v-row align="center" justify="center">
@@ -56,7 +64,7 @@
       </v-col>
     </v-row>
     <!--序列播放-->
-    <v-dialog v-model="orderdialog" persistent>
+    <v-dialog v-model="orderdialog" persistent max-width=800>
       <v-toolbar dark color="primary">
         <v-btn icon dark @click="orderdialog = false">
           <v-icon>mdi-close</v-icon>
@@ -66,7 +74,7 @@
       </v-toolbar>
       <v-card class="pa-5">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
-        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Chinese}}}</v-chip>
+        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Chinese}}</v-chip>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
           <v-btn text color="red" @click="resetorder">{{$t("ui.resetorder")}}</v-btn>
