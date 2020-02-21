@@ -12,6 +12,7 @@ module.exports = {
         playthislist: "播放序列",
         listempty: "你的序列还是空的哦peko~",
         resetorder: "清空当前序列",
-        language: "语言"
+        language: "语言",
+        orderplaymodehelp: "序列播放食用方法"
     }
 }

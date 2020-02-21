@@ -82,6 +82,22 @@
         <p v-else>{{$t("ui.listempty")}}</p>     
       </v-card>
     </v-dialog>
+    <!--序列播放说明-->
+    <v-dialog v-model="helpdialog" persistent>
+      <v-toolbar dark color="primary">
+        <v-toolbar-title>{{$t("ui.orderplaymodehelp")}}</v-toolbar-title>
+        <v-spacer></v-spacer>
+      </v-toolbar>
+      <v-card class="pa-5">
+        <p class="title">打开序列播放，点出你想要的片段（可以重复）</p>
+        <img src="1.png">
+        <p class="title">然后点击右下角的圆形按钮</p>
+        <img src="2.png">
+        <p class="title">在这里，你就可以让机器自动按顺序播放这些片段，形成一句话了peko</p>
+        <img src="3.png">
+      </v-card>
+        <v-btn raised color="primary" @click="helpdialog=false">明白了</v-btn>
+    </v-dialog>
   </v-container>
 </template>
 
@@ -92,7 +108,8 @@ export default {
     voices: voicelist.groups,
     orderplaymode: false,
     orderlist: [],
-    orderdialog: false
+    orderdialog: false,
+    helpdialog:false,
   }),
   created() {
     window.console.log(this.voices); //装载语音包path
@@ -135,6 +152,13 @@ export default {
     },
     resetorder(){
       this.orderlist=[];
+    }
+  },
+  watch:{
+    orderplaymode:function(){
+       if(this.orderplaymode){
+         this.helpdialog=true;
+       }
     }
   }
 };

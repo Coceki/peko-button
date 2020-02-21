@@ -120,6 +120,13 @@
                     "translation": {
                         "Chinese": "明显不一样好吧"
                     }
+                },
+                {
+                    "name": "十分抱歉",
+                    "path": "十分抱歉.mp3",
+                    "translation": {
+                        "Chinese": "十分抱歉"
+                    }
                 }
             ]
         },
@@ -129,12 +136,27 @@
                 "Chinese": "问候"
             },
             "voicelist": [{
-                "name": "晚上好peko",
-                "path": "晚上好peko.mp3",
-                "translation": {
-                    "Chinese": "晚上好peko"
+                    "name": "晚上好peko",
+                    "path": "晚上好peko.mp3",
+                    "translation": {
+                        "Chinese": "晚上好peko"
+                    }
+                },
+                {
+                    "name": "谢谢（中文）",
+                    "path": "谢谢（中文）.mp3",
+                    "translation": {
+                        "Chinese": "谢谢（中文）"
+                    }
+                },
+                {
+                    "name": "谢谢（英文）",
+                    "path": "谢谢（英文）.mp3",
+                    "translation": {
+                        "Chinese": "谢谢（英文）"
+                    }
                 }
-            }]
+            ]
         },
         {
             "name": "语气",
@@ -142,12 +164,20 @@
                 "Chinese": "语气"
             },
             "voicelist": [{
-                "name": "波纹呼吸",
-                "path": "波纹呼吸.mp3",
-                "translation": {
-                    "Chinese": "波纹呼吸"
+                    "name": "波纹呼吸",
+                    "path": "波纹呼吸.mp3",
+                    "translation": {
+                        "Chinese": "波纹呼吸"
+                    }
+                },
+                {
+                    "name": "哈欠",
+                    "path": "哈欠.mp3",
+                    "translation": {
+                        "Chinese": "哈欠"
+                    }
                 }
-            }]
+            ]
         },
         {
             "name": "名言",
@@ -204,12 +234,27 @@
                 "Chinese": "惊叹"
             },
             "voicelist": [{
-                "name": "sugoyi",
-                "path": "sugoyi.mp3",
-                "translation": {
-                    "Chinese": "斯国一~"
+                    "name": "sugoyi",
+                    "path": "sugoyi.mp3",
+                    "translation": {
+                        "Chinese": "斯国一~"
+                    }
+                },
+                {
+                    "name": "你在干什么peko（音量注意）",
+                    "path": "你在干什么peko（音量注意）.mp3",
+                    "translation": {
+                        "Chinese": "你在干什么peko（音量注意）"
+                    }
+                },
+                {
+                    "name": "救救我，前辈",
+                    "path": "救救我，前辈.mp3",
+                    "translation": {
+                        "Chinese": "救救我，前辈（音量注意）"
+                    }
                 }
-            }]
+            ]
         }
 
 

@@ -9,6 +9,7 @@
         <v-toolbar-title>{{$t("ui.title")}}</v-toolbar-title>
 
         <v-spacer></v-spacer>
+        <v-toolbar-title class="pa-2">点这里帮助开发者完善这个网页→</v-toolbar-title>
          <v-btn icon @click="See('https://github.com/Coceki/peko-button')"><v-icon>mdi-github-circle</v-icon></v-btn>
         <v-menu transition="slide-y-transition" bottom offset-y>
         <template v-slot:activator="{on:menu}">
