@@ -32,6 +32,9 @@
                     作者：Coceki
                     <v-btn icon @click="See('https://github.com/Coceki/peko-button')"><v-icon>mdi-github-circle</v-icon></v-btn>
                   </v-row>
+                  <v-row>
+                    {{$t("ui.developerinfo")}}
+                  </v-row>
                 </v-container>
               </v-flex>
               <v-spacer />

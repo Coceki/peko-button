@@ -13,6 +13,8 @@ module.exports = {
         listempty: "你的序列还是空的哦peko~",
         resetorder: "清空当前序列",
         language: "语言",
-        orderplaymodehelp: "序列播放食用方法"
+        orderplaymodehelp: "序列播放食用方法",
+        developerinfo: "本站为爱好者创作，与Hololive官方无关",
+        repeatmode: "不要停下来啊（循环序列）"
     }
 }
