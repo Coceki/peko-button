@@ -5,7 +5,7 @@
       <v-container fluid class="mt-10">
       <v-fab-transition>
         <v-btn
-          class="mb-5 mr-5"
+          class=" "
           v-show="gotop"
           color="primary"
           fab
@@ -60,9 +60,11 @@ export default {
   },
 
   data: () => ({
+    gotop:false,
     //
   }),
   mounted(){
+    window.addEventListener("scroll", this.handleScroll, true);
     if (this.$cookies.isKey("Lang")){
       this.$i18n.locale=this.$cookies.get("Lang");
     

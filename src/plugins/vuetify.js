@@ -25,8 +25,8 @@ export default new Vuetify({
     theme: {
         themes: {
             light: {
-                primary: '#728bf3',
-                secondary: '#FF9330',
+                primary: '#728bf3', //主题色1
+                secondary: '#FF9330', //主题是2
             },
         },
     }

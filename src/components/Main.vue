@@ -3,7 +3,7 @@
     <v-fab-transition>
       
       <v-btn
-        class="mb-11"
+        class="mb-12 mr-12"
         v-show="orderplaymode"
         color="primary"
         dark
