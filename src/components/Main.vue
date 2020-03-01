@@ -35,6 +35,17 @@
       <v-col cols="12">
         <v-card class="pa-4">
           <p class="headline font-weight-blod">
+            <v-icon large color="red">mdi-information</v-icon>
+            {{$t("ui.info")}}
+          </p>
+          <p>{{$t("ui.betainfo")}}</p>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <v-card class="pa-4">
+          <p class="headline font-weight-blod">
             <v-icon large color="primary">mdi-help-circle</v-icon>
             {{$t("ui.helptitle")}}
           </p>
@@ -93,11 +104,29 @@
       </v-toolbar>
       <v-card class="pa-5">
         <p class="title">打开序列播放，点出你想要的片段（可以重复）</p>
-        <img src="1.png" width=300>
+        <v-img src="1.png" width=300>
+        <template v-slot:placeholder>
+                    <v-row class="fill-height ma-0" align="center" justify="center">
+                      <v-progress-circular indeterminate color="primary"></v-progress-circular>
+                    </v-row>
+        </template>
+        </v-img>
         <p class="title">然后点击右下角的圆形按钮</p>
-        <img src="2.png" width=300>
+        <v-img src="2.png" width=300>
+        <template v-slot:placeholder>
+                    <v-row class="fill-height ma-0" align="center" justify="center">
+                      <v-progress-circular indeterminate color="primary"></v-progress-circular>
+                    </v-row>
+        </template>
+        </v-img>
         <p class="title">在这里，你就可以让机器自动按顺序播放这些片段，形成一句话了peko</p>
-        <img src="3.png" width=300>
+        <v-img src="3.png" width=300>
+        <template v-slot:placeholder>
+                    <v-row class="fill-height ma-0" align="center" justify="center">
+                      <v-progress-circular indeterminate color="primary"></v-progress-circular>
+                    </v-row>
+        </template>
+        </v-img>
       </v-card>
         <v-btn raised color="primary" @click="helpdialog=false">明白了</v-btn>
     </v-dialog>

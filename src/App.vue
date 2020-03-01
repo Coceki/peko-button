@@ -29,8 +29,11 @@
               <v-flex xs10>
                 <v-container>
                   <v-row align="end">
-                    作者：Coceki
+                    {{$t("ui.developer")}}
                     <v-btn icon @click="See('https://github.com/Coceki/peko-button')"><v-icon>mdi-github-circle</v-icon></v-btn>
+                  </v-row>
+                  <v-row>
+                    {{$t("ui.cridits")}}
                   </v-row>
                   <v-row>
                     {{$t("ui.developerinfo")}}

@@ -15,6 +15,10 @@ module.exports = {
         language: "语言",
         orderplaymodehelp: "序列播放食用方法",
         developerinfo: "本站为爱好者创作，与Hololive官方无关",
-        repeatmode: "不要停下来啊（循环序列）"
+        repeatmode: "不要停下来啊（循环序列）",
+        betainfo: "本站目前还不完善，如果你想投稿素材（不可以投会员限定和贩售的音声素材），贡献日英翻译，或者提出建议与反馈bug，请点击顶栏的“帮助开发者完善这个网页”，GitHub项目主页和底部的贡献者名单会有你的名字",
+        info: "注意！",
+        developer: "作者：Coceki",
+        cridits: "贡献者名单：昭和歌姬夏半首"
     }
 }

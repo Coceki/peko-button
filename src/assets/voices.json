@@ -2,7 +2,7 @@
     "groups": [{
             "name": "hahaha",
             "translation": {
-                "Chinese": "笑声"
+                "Chinese": "各种哈↑哈↑哈↑"
             },
             "voicelist": [{
                     "name": "hahahahaha",
@@ -175,6 +175,34 @@
                     "path": "哈欠.mp3",
                     "translation": {
                         "Chinese": "哈欠"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "？抖M福利",
+            "translation": {
+                "Chinese": "？抖M福利"
+            },
+            "voicelist": [{
+                    "name": "死小孩快滚去吃饭啊白痴！",
+                    "path": "死小孩快滚去吃饭啊白痴！.mp3",
+                    "translation": {
+                        "Chinese": "死小孩快滚去吃饭啊白痴！"
+                    }
+                },
+                {
+                    "name": "别在这里看我直播了死小孩！",
+                    "path": "别在这里看我直播了死小孩！.mp3",
+                    "translation": {
+                        "Chinese": "别在这里看我直播了死小孩！"
+                    }
+                },
+                {
+                    "name": "快放完你的正月假滚回学校去啊！",
+                    "path": "快放完你的正月假滚回学校去啊！.mp3",
+                    "translation": {
+                        "Chinese": "快放完你的正月假滚回学校去啊！"
                     }
                 }
             ]
