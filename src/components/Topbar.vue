@@ -11,6 +11,11 @@
         <v-spacer></v-spacer>
         
          <v-btn @click="See('https://github.com/Coceki/peko-button')"><v-icon left>mdi-github-circle</v-icon>帮助开发者完善这个网页</v-btn>
+        <v-fab-transition>
+            <v-btn v-on="on" fab icon @click="DarkMode()" >
+              <v-icon>{{darkmodeicon}}</v-icon>
+            </v-btn>
+          </v-fab-transition>
         <v-menu transition="slide-y-transition" bottom offset-y>
         <template v-slot:activator="{on:menu}">
               <v-fab-transition>
@@ -43,11 +48,22 @@ export default {
 		this.$i18n.locale=e;
 		this.$cookies.set("Lang",e);
     },
+    DarkMode(){
+      this.$store.commit("change_dark_mode");
+      this.$vuetify.theme.dark = this.$store.state.dark_mode;
+    },
     See (e) {
         window.location.href = e
       }
-    
-  }
+  },
+  computed: {
+    darkmodeicon: {
+      get: function() {
+        return this.$store.state.dark_icon;
+      },
+      
+      },
+    }
 }
 </script>
 

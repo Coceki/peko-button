@@ -14,8 +14,10 @@
         @click="orderdialog=true"
       >
       <v-badge
-          color="red"
-          content="6"
+        color="secondary"
+        :content="arrysize"
+        :value="arrysize"
+        overlap
         >
         <v-icon>mdi-reorder-horizontal</v-icon>
       </v-badge>
@@ -29,6 +31,17 @@
     </v-row>
     <v-row align="center" justify="center">
       <v-switch v-model="orderplaymode" inset color="secondary" :label="$t('ui.openorderplaymode')"></v-switch>
+      <v-badge
+        color="primary"
+        :content="this.$t('ui.beta')"
+        overlap
+        offset-x=40
+        offset-y=20
+      >
+      <!-- <router-link to="/pekolanguage" class="a"> -->
+      <v-btn disabled class="ma-2" raised color="secondary">{{$t("ui.pekolanguage")}}</v-btn>
+      <!-- </router-link> -->
+      </v-badge>
     </v-row>
     <!---帮助文本--->
     <v-row>
@@ -86,7 +99,7 @@
       <v-card class="pa-2">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
         <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Chinese}}</v-chip>
-        <v-switch v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
+        <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
           <v-btn text color="secondary" @click="stopplay">{{$t("ui.stopplay")}}</v-btn>
@@ -103,7 +116,7 @@
         <v-spacer></v-spacer>
       </v-toolbar>
       <v-card class="pa-5">
-        <p class="title">打开序列播放，点出你想要的片段（可以重复）</p>
+        <p class="title">{{$t("ui.tips1")}}</p>
         <v-img src="1.png" width=300>
         <template v-slot:placeholder>
                     <v-row class="fill-height ma-0" align="center" justify="center">
@@ -111,7 +124,7 @@
                     </v-row>
         </template>
         </v-img>
-        <p class="title">然后点击右下角的圆形按钮</p>
+        <p class="title">{{$t("ui.tips2")}}</p>
         <v-img src="2.png" width=300>
         <template v-slot:placeholder>
                     <v-row class="fill-height ma-0" align="center" justify="center">
@@ -119,7 +132,7 @@
                     </v-row>
         </template>
         </v-img>
-        <p class="title">在这里，你就可以让机器自动按顺序播放这些片段，形成一句话了peko</p>
+        <p class="title">{{$t("ui.tips3")}}</p>
         <v-img src="3.png" width=300>
         <template v-slot:placeholder>
                     <v-row class="fill-height ma-0" align="center" justify="center">
@@ -128,7 +141,7 @@
         </template>
         </v-img>
       </v-card>
-        <v-btn raised color="primary" @click="helpdialog=false">明白了</v-btn>
+        <v-btn raised color="primary" @click="helpdialog=false">{{$t("ui.gotit")}}</v-btn>
     </v-dialog>
   </v-container>
 </template>
@@ -145,6 +158,7 @@ export default {
     orderlist:[],
     helpdialog:false,
     repeatmode:false,
+    arrysize:0,
   }),
   created() {
     window.console.log(this.voices); //装载语音包path
@@ -208,10 +222,16 @@ export default {
        if(this.orderplaymode){
          this.helpdialog=true;
        }
+    },
+    orderlist:function(){
+      this.arrysize=this.orderlist.length;
     }
-  }
+  },
 };
 </script>
 
 <style>
+.a{
+  text-decoration: none;
+}
 </style>

@@ -26,8 +26,12 @@ export default new Vuetify({
         themes: {
             light: {
                 primary: '#728bf3', //主题色1
-                secondary: '#FF9330', //主题是2
+                secondary: '#FF9330', //主题色2
             },
+            dark: { //夜间模式下的颜色
+                primary: '#728bf3', //主题色1
+                secondary: '#FF9330', //主题色2
+            }
         },
     }
 });
