@@ -155,6 +155,20 @@
                     "translation": {
                         "Chinese": "谢谢（英文）"
                     }
+                },
+                {
+                    "name": "再见（中文）",
+                    "path": "再见（中文）.mp3",
+                    "translation": {
+                        "Chinese": "再见（中文）"
+                    }
+                },
+                {
+                    "name": "我爱你（中文）",
+                    "path": "我爱你（中文）.mp3",
+                    "translation": {
+                        "Chinese": "我爱你（中文）"
+                    }
                 }
             ]
         },
