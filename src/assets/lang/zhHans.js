@@ -27,6 +27,7 @@ module.exports = {
         beta: "即将更新",
         gotit: "明白了",
         entersomewords: "请输入要生成的文字（性能不好别输太多，会卡）",
-        generate: "生成"
+        generate: "生成",
+        helpdevelope: "帮助完善网页"
     }
 }
