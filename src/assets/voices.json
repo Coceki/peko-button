@@ -70,6 +70,13 @@
                     }
                 },
                 {
+                    "name": "佩克拉不知道",
+                    "path": "佩克拉不知道.mp3",
+                    "translation": {
+                        "Chinese": "佩克拉不知道"
+                    }
+                },
+                {
                     "name": "对不起",
                     "path": "对不起.wav",
                     "translation": {
@@ -177,6 +184,13 @@
                     }
                 },
                 {
+                    "name": "早上好",
+                    "path": "早上好.mp3",
+                    "translation": {
+                        "Chinese": "早上好"
+                    }
+                },
+                {
                     "name": "晚上好peko",
                     "path": "晚上好peko.mp3",
                     "translation": {
@@ -226,10 +240,31 @@
                 "Chinese": "语气"
             },
             "voicelist": [{
+                    "name": "哼~",
+                    "path": "哼~.mp3",
+                    "translation": {
+                        "Chinese": "哼~"
+                    }
+                },
+                {
                     "name": "Olreeee!",
                     "path": "Olreeee.wav",
                     "translation": {
                         "Chinese": "Olreeee!"
+                    }
+                },
+                {
+                    "name": "歪比歪比~歪比巴卜",
+                    "path": "歪比歪比~歪比巴卜.mp3",
+                    "translation": {
+                        "Chinese": "歪比歪比~歪比巴卜"
+                    }
+                },
+                {
+                    "name": "巴布~巴布巴布~",
+                    "path": "巴布~巴布巴布~.mp3",
+                    "translation": {
+                        "Chinese": "巴布~巴布巴布~"
                     }
                 },
                 {
@@ -265,6 +300,20 @@
                     "path": "哈欠.mp3",
                     "translation": {
                         "Chinese": "哈欠"
+                    }
+                },
+                {
+                    "name": "呐!",
+                    "path": "呐！.mp3",
+                    "translation": {
+                        "Chinese": "呐!"
+                    }
+                },
+                {
+                    "name": "呐~呐~",
+                    "path": "呐~呐~.mp3",
+                    "translation": {
+                        "Chinese": "呐~呐~"
                     }
                 },
                 {
@@ -338,6 +387,20 @@
                 "Chinese": "名言"
             },
             "voicelist": [{
+                    "name": "喜欢佩克拉的话就推啊",
+                    "path": "喜欢佩克拉的话就推啊.mp3",
+                    "translation": {
+                        "Chinese": "喜欢佩克拉的话就推啊"
+                    }
+                },
+                {
+                    "name": "喜欢就推就好了啦",
+                    "path": "喜欢就推就好了啦.mp3",
+                    "translation": {
+                        "Chinese": "喜欢就推就好了啦"
+                    }
+                },
+                {
                     "name": "佩克拉喜欢在现实中看见别人流泪的样子",
                     "path": "佩克拉喜欢在现实中看见别人流泪的样子.mp3",
                     "translation": {
