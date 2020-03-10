@@ -8,6 +8,7 @@ import zhHans from './assets/lang/zhHans'
 import en from './assets/lang/en'
 import ja from './assets/lang/ja'
 import VueCookies from 'vue-cookies'
+import '@mdi/font/css/materialdesignicons.css'
 Vue.use(VueCookies)
 
 Vue.config.productionTip = false

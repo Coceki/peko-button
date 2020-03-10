@@ -46,3 +46,4 @@
 素材提供：  
 * [Coceki](https://space.bilibili.com/11229533)
 * [昭和歌姬夏半首](https://space.bilibili.com/114298950)
+* [Richard_Al](https://space.bilibili.com/34401008)

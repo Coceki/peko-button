@@ -10,7 +10,7 @@
 
         <v-spacer></v-spacer>
         
-         <v-btn @click="See('https://github.com/Coceki/peko-button')"><v-icon left>mdi-github-circle</v-icon>{{$t("ui.helpdevelope")}}}</v-btn>
+         <v-btn @click="See('https://github.com/Coceki/peko-button')"><v-icon left>mdi-github</v-icon>{{$t("ui.helpdevelope")}}</v-btn>
         <v-fab-transition>
             <v-btn v-on="on" fab icon @click="DarkMode()" >
               <v-icon>{{darkmodeicon}}</v-icon>

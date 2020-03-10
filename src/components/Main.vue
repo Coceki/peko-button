@@ -1,7 +1,39 @@
 <template>
   <v-container>
+    
+      <v-menu id="volumeM" open-on-hover offset-x>
+      <template v-slot:activator="{ on }">
+      <v-btn
+        id="volumestyle"
+        color="secondary"
+        dark
+        fixed
+        bottom
+        left
+        fab
+        v-on="on"
+      >
+      <v-icon>mdi-volume-high</v-icon>
+      </v-btn>
+      </template>
+      <v-card
+        min-height="100"
+        min-width="250"
+        flat
+      >
+      <v-slider
+        class="pl-5 pr-5 pt-8 mb-0"
+        v-model="volume"
+        :label="this.$t('ui.volume')"
+        thumb-label
+        max=100
+        min=0
+        dense
+        prepend-icon="mdi-volume-high"
+      ></v-slider>
+      </v-card>
+    </v-menu>
     <v-fab-transition>
-      
       <v-btn
         class="mb-12 mr-12"
         v-show="orderplaymode"
@@ -159,6 +191,7 @@ export default {
     helpdialog:false,
     repeatmode:false,
     arrysize:0,
+    volume:100,
   }),
   created() {
     window.console.log(this.voices); //装载语音包path
@@ -172,6 +205,7 @@ export default {
       }
       let audio = new Audio("voices/" + item.path);
       this.voice = item;
+      audio.volume=this.volume/100;
       audio.play();
     },
     playOnly(item){
@@ -191,13 +225,14 @@ export default {
       audio.preload = true;
       audio.loop = false;
       audio.src = "voices/"+arry[i].path;
+      audio.volume=this.volume/100;
       audio.play();
       audio.addEventListener('ended', playEndedHandler, false); 
       function playEndedHandler(){//序列播放实现
         i++;   
         if(i < arry.length){
           audio.src = "voices/"+arry[i].path;
-          window.console.log(i);
+          //window.console.log(i);
           audio.play();
           
         }else{
@@ -233,5 +268,11 @@ export default {
 <style>
 .a{
   text-decoration: none;
+}
+#volumestyle{
+  z-index:201;
+}
+#volumeM{
+  z-index: 999;
 }
 </style>

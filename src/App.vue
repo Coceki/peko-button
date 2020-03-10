@@ -30,7 +30,7 @@
                 <v-container>
                   <v-row align="end">
                     {{$t("ui.developer")}}
-                    <v-btn icon @click="See('https://github.com/Coceki/peko-button')"><v-icon>mdi-github-circle</v-icon></v-btn>
+                    <v-btn icon @click="See('https://github.com/Coceki/peko-button')"><v-icon>mdi-github</v-icon></v-btn>
                   </v-row>
                   <v-row>
                     {{$t("ui.cridits")}}

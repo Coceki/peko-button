@@ -69,12 +69,32 @@
                         "Chinese": "笨笨恰~"
                     }
                 },
-
                 {
-                    "name": "istarted",
-                    "path": "istarted.mp3",
+                    "name": "对不起",
+                    "path": "对不起.wav",
                     "translation": {
-                        "Chinese": "我开动了"
+                        "Chinese": "对不起~"
+                    }
+                },
+                {
+                    "name": "真可爱呢",
+                    "path": "真可爱呢.wav",
+                    "translation": {
+                        "Chinese": "真可爱呢"
+                    }
+                },
+                {
+                    "name": "要上喽~",
+                    "path": "要上喽~.wav",
+                    "translation": {
+                        "Chinese": "要上喽~"
+                    }
+                },
+                {
+                    "name": "Duuuuu马猴~",
+                    "path": "Duuuuu马猴~.wav",
+                    "translation": {
+                        "Chinese": "Duuuuu马猴~"
                     }
                 },
                 {
@@ -136,10 +156,38 @@
                 "Chinese": "问候"
             },
             "voicelist": [{
+                    "name": "嗨！",
+                    "path": "嗨！.wav",
+                    "translation": {
+                        "Chinese": "嗨！"
+                    }
+                },
+                {
+                    "name": "喵哈喽~",
+                    "path": "喵哈喽~.wav",
+                    "translation": {
+                        "Chinese": "喵哈喽~"
+                    }
+                },
+                {
+                    "name": "自我介绍",
+                    "path": "自我介绍.wav",
+                    "translation": {
+                        "Chinese": "自我介绍"
+                    }
+                },
+                {
                     "name": "晚上好peko",
                     "path": "晚上好peko.mp3",
                     "translation": {
                         "Chinese": "晚上好peko"
+                    }
+                },
+                {
+                    "name": "阿里嘎多peko",
+                    "path": "阿里嘎多peko.wav",
+                    "translation": {
+                        "Chinese": "阿里嘎多peko"
                     }
                 },
                 {
@@ -178,6 +226,34 @@
                 "Chinese": "语气"
             },
             "voicelist": [{
+                    "name": "Olreeee!",
+                    "path": "Olreeee.wav",
+                    "translation": {
+                        "Chinese": "Olreeee!"
+                    }
+                },
+                {
+                    "name": "PONPONPONPON",
+                    "path": "PONPONPONPON.wav",
+                    "translation": {
+                        "Chinese": "PONPONPONPON"
+                    }
+                },
+                {
+                    "name": "Prrrrrre",
+                    "path": "Prrrrrre.wav",
+                    "translation": {
+                        "Chinese": "Prrrrrre"
+                    }
+                },
+                {
+                    "name": "Sei~no",
+                    "path": "Seino.wav",
+                    "translation": {
+                        "Chinese": "Sei~no"
+                    }
+                },
+                {
                     "name": "波纹呼吸",
                     "path": "波纹呼吸.mp3",
                     "translation": {
@@ -190,6 +266,34 @@
                     "translation": {
                         "Chinese": "哈欠"
                     }
+                },
+                {
+                    "name": "boooou~~",
+                    "path": "boooou~~.wav",
+                    "translation": {
+                        "Chinese": "boooou~~"
+                    }
+                },
+                {
+                    "name": "嗨↑嗨↑嗨↑",
+                    "path": "嗨↑嗨↑嗨↑.wav",
+                    "translation": {
+                        "Chinese": "嗨↑嗨↑嗨↑"
+                    }
+                },
+                {
+                    "name": "啦啦啦啦啦",
+                    "path": "啦啦啦啦啦.wav",
+                    "translation": {
+                        "Chinese": "啦啦啦啦啦"
+                    }
+                },
+                {
+                    "name": "Ma⬆↓",
+                    "path": "Ma⬆↓.wav",
+                    "translation": {
+                        "Chinese": "Ma⬆↓"
+                    }
                 }
             ]
         },
@@ -199,6 +303,13 @@
                 "Chinese": "？抖M福利"
             },
             "voicelist": [{
+                    "name": "恶心心",
+                    "path": "恶心心.wav",
+                    "translation": {
+                        "Chinese": "恶心心"
+                    }
+                },
+                {
                     "name": "死小孩快滚去吃饭啊白痴！",
                     "path": "死小孩快滚去吃饭啊白痴！.mp3",
                     "translation": {
