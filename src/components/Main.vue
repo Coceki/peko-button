@@ -80,7 +80,7 @@
       <v-col cols="12">
         <v-card class="pa-4">
           <p class="headline font-weight-blod">
-            <v-icon large color="red">mdi-information</v-icon>
+            <v-icon large color="red">mdi-party-popper</v-icon>
             {{$t("ui.info")}}
           </p>
           <p>{{$t("ui.betainfo")}}</p>
@@ -101,11 +101,12 @@
     </v-row>
     <!---展示按钮--->
     <v-row v-for="group in voices" :key="group">
-      <v-col cols="12">
-        <v-card>
-          <v-card-title>{{group.translation.Chinese}}</v-card-title>
+      <v-col cols="12" class="ma-0 pa-0">
+        <v-card class="ma-1 pa-0">
+          <v-card-title v-if="$i18n.locale=='zhHans'">{{group.translation.Chinese}}</v-card-title>
+          <v-card-title v-else-if="$i18n.locale=='ja'">{{group.translation.Japanese}}</v-card-title>
           <v-container>
-            <v-row no-gutters>
+            <v-row no-gutters v-if="$i18n.locale=='zhHans'">
               <v-btn
                 class="ma-2 pa-1"
                 v-for="voice in group.voicelist"
@@ -114,6 +115,16 @@
                 color="secondary"
                 @click="play(voice)"
               >{{voice.translation.Chinese}}</v-btn>
+            </v-row>
+            <v-row no-gutters v-else-if="$i18n.locale=='ja'">
+              <v-btn
+                class="ma-1 pa-1"
+                v-for="voice in group.voicelist"
+                :key="voice.name"
+                raised
+                color="secondary"
+                @click="play(voice)"
+              >{{voice.translation.Japanese}}</v-btn>
             </v-row>
           </v-container>
         </v-card>
@@ -128,9 +139,21 @@
         <v-toolbar-title>{{$t("ui.orderplaymode")}}</v-toolbar-title>
         <v-spacer></v-spacer>
       </v-toolbar>
-      <v-card class="pa-2">
+      <v-card v-if="$i18n.locale=='zhHans'" class="pa-2">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
         <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Chinese}}</v-chip>
+        <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
+        <v-card-actions v-if="orderlist.length>0">
+          <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
+          <v-btn text color="secondary" @click="stopplay">{{$t("ui.stopplay")}}</v-btn>
+          <v-divider></v-divider>
+          <v-btn text color="red" @click="resetorder">{{$t("ui.resetorder")}}</v-btn>
+        </v-card-actions> 
+        <p v-else>{{$t("ui.listempty")}}</p>     
+      </v-card>
+      <v-card v-if="$i18n.locale=='ja'" class="pa-1">
+        <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
+        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Japanese}}</v-chip>
         <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>

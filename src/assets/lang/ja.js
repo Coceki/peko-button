@@ -1,5 +1,34 @@
 ﻿module.exports = {
     ui: {
-
+        title: "ぺこらボタン",
+        mediacontorl: "コントロールボタン",
+        stopplay: "再生を停止する",
+        helptitle: "遊び方ぺこ?",
+        helpcontent: "クリックボタン、その後、ぺこらの声を再生することができますだよ~マルチクリックをサポート、同じボタンを複数回クリックして、エコー効果を作成することもできますぺこ~",
+        additionalhelp: "私はボタンのすべてのボリュームが同じであることを約束することはできませんので、あなたの耳に注意してください、そのためごめんなさいε=ε=ε=┏(゜ロ゜;)┛",
+        openorderplaymode: "オンにする注文プレイ",
+        orderplaymode: "注文プレイ",
+        orderlistnow: "現在のプレイリスト",
+        playthislist: "プレイリスト",
+        listempty: "プレイリストは空です",
+        resetorder: "プレイリストをクリア",
+        language: "言語",
+        orderplaymodehelp: "注文プレイの使用方法",
+        developerinfo: "このウェブサイトは愛好家によって設定されています、ホロライブプロダクションとは何の関係もない",
+        repeatmode: "止まらないで（ループプレイ）",
+        betainfo: "こんにちは、このウェブサイトはついに日本語をサポートしました　私の日本語は苦手です　間違いを見つけた場合は、Gihubでお知らせください ありがとうございました",
+        info: "兎田ぺこら200,000人のYouTubeチャンネル登録者におめでとう",
+        developer: "開発者：Coceki",
+        cridits: "特別な感謝：昭和歌姬夏半首 Richard_Al",
+        tips1: "オンにする注文プレイ、欲しいものを選択してください（繰り返し可能）",
+        tips2: "次に、右下の丸いボタンをクリックします",
+        tips3: "ここで、コンピューターにプレイリストを自動的に再生させることができます",
+        pekolanguage: "ぺこ語発生器",
+        beta: "近日公開",
+        gotit: "とった",
+        entersomewords: "请输入要生成的文字（性能不好别输太多，会卡）",
+        generate: "生成する",
+        helpdevelope: "このウェブサイトの改善にご協力ください",
+        volume: "ボリューム"
     }
 }

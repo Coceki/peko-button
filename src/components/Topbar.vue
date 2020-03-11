@@ -22,7 +22,7 @@
             </v-list-item-title>
           </v-list-item>
           <v-divider></v-divider>
-          <v-list-item @click="See('https://twitter.com/usadapekora')">
+          <v-list-item @click="See('https://github.com/Coceki/peko-button')">
             <v-list-item-title>
               <v-icon left color="black">mdi-github</v-icon>{{$t("ui.helpdevelope")}}
             </v-list-item-title>
@@ -63,7 +63,7 @@ export default {
     langs: [
       { title: "简体中文", src: "zhHans",isready:true},
       { title: "English(Coming Soon)", src: "en",isready:false },
-      { title: "日本語(近日公開)", src: "ja",isready:false }
+      { title: "日本語(ベータ版)", src: "ja",isready:true }
     ],
   }),
   methods:{
