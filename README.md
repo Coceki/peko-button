@@ -1,5 +1,9 @@
 # Peko-button
-注意：该项目刚刚启动，还未完善，请大佬轻喷，我日语本当🔨，有错误请指出，素材投稿请参考 如何参与开发，Bug与建议请直接发issue
+
+注意：该项目刚刚启动，还未完善，请大佬轻喷，我日语本当🔨，有错误请指出，素材投稿请参考 如何参与开发，Bug与建议请直接发issue  
+  
+  
+技术交流QQ群：1082177867（为了防止小鬼，群问题为本项目第一次commit的时间，格式为yyyy.mm.dd,有0不需要补0） ~~（什么都不会进来吹吹水也行）~~  
 ## 项目说明
     
 项目地址：<https://peko.top/>（东京服务器，访问可能比较慢）  
@@ -29,13 +33,12 @@
 * Fork这个项目  
 * 部署node.js，在命令行中安装Vue-cli `npm install -g @vue/cli`  
 * cd到项目文件夹，运行 `npm install` 来安装项目中用到的依赖
-* 运行`npm run dev` 即可在http://127.0.0.1:8080/中访问站点
+* 运行`npm run dev` 即可在http://127.0.0.1:8080/ 中访问站点
 * 用VScode或其他工具进行修改后发送一个Pull request请求即可
 
 所有的音源在/src/assets/voices.json中有定义  
 音源文件在/public/voices中（建议使用mp3格式）  
-
-锤子日语，没有日语版，但是日语文件在/src/assets/lang/ja.js，同样也有英语文件，完善它们即可让网页实现三语切换    
+日语文件在/src/assets/lang/ja.js，同样也有英语文件(未实装)    
 
 配色文件在/src/plugins/vuetify.js的themes中，修改primary与secondary的值就可以变成其他配色
 
