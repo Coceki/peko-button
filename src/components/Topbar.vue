@@ -8,7 +8,7 @@
       >
       <v-menu  transition="slide-y-transition" bottom offset-y>
         <template v-slot:activator="{on:menu}">
-      <v-app-bar-nav-icon v-on="menu" v-if="$vuetify.breakpoint.smAndDown"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-on="menu" v-show="$vuetify.breakpoint.smAndDown"></v-app-bar-nav-icon>
       </template>
       <v-list>
           <v-list-item @click="See('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ')">

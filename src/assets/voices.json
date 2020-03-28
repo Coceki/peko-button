@@ -167,14 +167,6 @@
                         "Chinese": "明显不一样好吧",
                         "Japanese": "ちがうぺこでしょ明らかに"
                     }
-                },
-                {
-                    "name": "十分抱歉",
-                    "path": "十分抱歉.mp3",
-                    "translation": {
-                        "Chinese": "十分抱歉",
-                        "Japanese": "ごめなさい"
-                    }
                 }
             ]
         },
@@ -206,6 +198,14 @@
                     "translation": {
                         "Chinese": "自我介绍",
                         "Japanese": "自己紹介"
+                    }
+                },
+                {
+                    "name": "欢迎来到兔田大家族",
+                    "path": "欢迎来到兔田大家族.mp3",
+                    "translation": {
+                        "Chinese": "欢迎来到兔田大家族",
+                        "Japanese": "兎田ファミリようこそ"
                     }
                 },
                 {
