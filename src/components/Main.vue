@@ -114,7 +114,6 @@
                 raised
                 color="secondary"
                 @click="play(voice)"
-                @mouseover="preloadvoice(voice)"
               >{{voice.translation.Chinese}}</v-btn>
             </v-row>
             <v-row no-gutters v-else-if="$i18n.locale=='ja'">
@@ -125,7 +124,6 @@
                 raised
                 color="secondary"
                 @click="play(voice)"
-                @mouseover="preloadvoice(voice)"
               >{{voice.translation.Japanese}}</v-btn>
             </v-row>
           </v-container>
@@ -143,7 +141,7 @@
       </v-toolbar>
       <v-card v-if="$i18n.locale=='zhHans'" class="pa-2">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
-        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @mouseover="preloadvoice(selected)" @click="playOnly(selected)">{{selected.translation.Chinese}}</v-chip>
+        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Chinese}}</v-chip>
         <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
@@ -155,7 +153,7 @@
       </v-card>
       <v-card v-if="$i18n.locale=='ja'" class="pa-1">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
-        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @mouseover="preloadvoice(selected)" @click="playOnly(selected)">{{selected.translation.Japanese}}</v-chip>
+        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Japanese}}</v-chip>
         <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
@@ -219,30 +217,33 @@ export default {
     volume:100,
   }),
   created() {
-    window.console.log(this.voices); //装载语音包path
+    //window.console.log(this.voices); //装载语音包path
   },
   methods: {
-    preloadvoice(item){
-      let audio = new Audio("voices/" + item.path);
-      audio.preload = true;
-      this.voice = item;
-      audio.volume=this.volume/100;
-      window.console.log("加载");
-    },
     play(item) {
       if (this.orderplaymode) {
         //判断序列播放
         this.orderlist.push(item);
-        window.console.log(this.orderlist);
+        //window.console.log(this.orderlist);
       }
-      let audio = new Audio("voices/" + item.path);
+      let audio = new Audio();
       audio.preload = true;
+      if(this.$i18n.locale=='zhHans'){
+        audio.src="http://47.100.35.226/voices/"+item.path;//大陆地区网络优化
+      }else{
+        audio.src="voices/"+item.path;
+      }
       this.voice = item;
       audio.volume=this.volume/100;
       audio.play();
     },
     playOnly(item){
-      let audio = new Audio("voices/" + item.path);
+      let audio = new Audio();
+      if(this.$i18n.locale=='zhHans'){
+        audio.src="http://47.100.35.226/voices/"+item.path;//大陆地区网络优化
+      }else{
+        audio.src="voices/"+item.path;
+      }
       audio.preload = true;
       this.voice = item;
       audio.play();
@@ -258,7 +259,11 @@ export default {
       let repeat = this.repeatmode;
       audio.preload = true;
       audio.loop = false;
-      audio.src = "voices/"+arry[i].path;
+      if(this.$i18n.locale=='zhHans'){
+        audio.src="http://47.100.35.226/voices/"+arry[i].path;//大陆地区网络优化
+      }else{
+        audio.src="voices/"+arry[i].path;
+      }
       audio.volume=this.volume/100;
       audio.play();
       audio.addEventListener('ended', playEndedHandler, false); 
