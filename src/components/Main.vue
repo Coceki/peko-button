@@ -114,6 +114,7 @@
                 raised
                 color="secondary"
                 @click="play(voice)"
+                @mouseover="preloadvoice(voice)"
               >{{voice.translation.Chinese}}</v-btn>
             </v-row>
             <v-row no-gutters v-else-if="$i18n.locale=='ja'">
@@ -124,6 +125,7 @@
                 raised
                 color="secondary"
                 @click="play(voice)"
+                @mouseover="preloadvoice(voice)"
               >{{voice.translation.Japanese}}</v-btn>
             </v-row>
           </v-container>
@@ -141,7 +143,7 @@
       </v-toolbar>
       <v-card v-if="$i18n.locale=='zhHans'" class="pa-2">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
-        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Chinese}}</v-chip>
+        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @mouseover="preloadvoice(selected)" @click="playOnly(selected)">{{selected.translation.Chinese}}</v-chip>
         <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
@@ -153,7 +155,7 @@
       </v-card>
       <v-card v-if="$i18n.locale=='ja'" class="pa-1">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
-        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Japanese}}</v-chip>
+        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @mouseover="preloadvoice(selected)" @click="playOnly(selected)">{{selected.translation.Japanese}}</v-chip>
         <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
@@ -220,6 +222,13 @@ export default {
     window.console.log(this.voices); //装载语音包path
   },
   methods: {
+    preloadvoice(item){
+      let audio = new Audio("voices/" + item.path);
+      audio.preload = true;
+      this.voice = item;
+      audio.volume=this.volume/100;
+      window.console.log("加载");
+    },
     play(item) {
       if (this.orderplaymode) {
         //判断序列播放
@@ -227,12 +236,14 @@ export default {
         window.console.log(this.orderlist);
       }
       let audio = new Audio("voices/" + item.path);
+      audio.preload = true;
       this.voice = item;
       audio.volume=this.volume/100;
       audio.play();
     },
     playOnly(item){
       let audio = new Audio("voices/" + item.path);
+      audio.preload = true;
       this.voice = item;
       audio.play();
     },

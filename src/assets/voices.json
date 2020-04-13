@@ -393,6 +393,22 @@
                     }
                 },
                 {
+                    "name": "喵",
+                    "path": "喵.mp3",
+                    "translation": {
+                        "Chinese": "喵",
+                        "Japanese": "ニャー"
+                    }
+                },
+                {
+                    "name": "喵2",
+                    "path": "喵2.mp3",
+                    "translation": {
+                        "Chinese": "喵2",
+                        "Japanese": "ニャー2"
+                    }
+                },
+                {
                     "name": "喵喵喵喵喵喵喵喵喵喵",
                     "path": "喵喵喵喵喵喵喵喵喵喵.mp3",
                     "translation": {
@@ -442,6 +458,13 @@
                     "path": "放学来操场后面我削不死你.wav",
                     "translation": {
                         "Chinese": "放学来操场后面我削不死你"
+                    }
+                },
+                {
+                    "name": "你们真的是一群色小鬼",
+                    "path": "你们真的是一群色小鬼.m4a",
+                    "translation": {
+                        "Chinese": "你们真的是一群色小鬼"
                     }
                 }
             ]
@@ -542,6 +565,14 @@
                     "translation": {
                         "Chinese": "救救我，前辈（音量注意）",
                         "Japanese": "助けて、先輩（音量注意）"
+                    }
+                },
+                {
+                    "name": "啊！搞错了！",
+                    "path": "啊！搞错了！.mp3",
+                    "translation": {
+                        "Chinese": "啊！搞错了！"
+
                     }
                 }
             ]
