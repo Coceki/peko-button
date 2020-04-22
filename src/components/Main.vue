@@ -84,6 +84,7 @@
             {{$t("ui.info")}}
           </p>
           <p>{{$t("ui.betainfo")}}</p>
+          <v-btn class="ma-2 pa-1" raised color="secondary" @click="playSpecial()">Co↘ce↗ki↘お兄ちゃん</v-btn>
         </v-card>
       </v-col>
     </v-row>
@@ -228,24 +229,22 @@ export default {
       }
       let audio = new Audio();
       audio.preload = true;
-      if(this.$i18n.locale=='zhHans'){
-        audio.src="http://47.100.35.226/voices/"+item.path;//大陆地区网络优化
-      }else{
-        audio.src="voices/"+item.path;
-      }
+      audio.src="voices/"+item.path;
       this.voice = item;
       audio.volume=this.volume/100;
       audio.play();
     },
     playOnly(item){
       let audio = new Audio();
-      if(this.$i18n.locale=='zhHans'){
-        audio.src="http://47.100.35.226/voices/"+item.path;//大陆地区网络优化
-      }else{
-        audio.src="voices/"+item.path;
-      }
+      audio.src="voices/"+item.path;
       audio.preload = true;
       this.voice = item;
+      audio.play();
+    },
+    playSpecial(){
+      let audio = new Audio();
+      audio.src="voices/私货.mp3";
+      audio.preload = true;
       audio.play();
     },
     deletelist(i){//删除序列中的一个值

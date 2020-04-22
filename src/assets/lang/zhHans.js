@@ -17,7 +17,7 @@ module.exports = {
         developerinfo: "本站为爱好者创作，与Hololive官方无关",
         repeatmode: "不要停下来啊（循环序列）",
         betainfo: "更新日志：2020.3.11 日语版已实装，点击右上角小地球切换，作者日语N114514，有的地方真的听不出了，有错误请在Github指出，谢谢大家支持",
-        info: "恭喜兔田佩克拉25万订阅达成！",
+        info: "恭喜兔田佩克拉27万订阅达成！",
         developer: "作者：Coceki",
         cridits: "特别感谢：昭和歌姬夏半首 Richard_Al 野兔子同好会",
         tips1: "打开序列播放，点出你想要的片段（可以重复）",
