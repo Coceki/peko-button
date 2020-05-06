@@ -30,5 +30,9 @@ module.exports = {
         generate: "生成",
         helpdevelope: "帮助完善网页",
         volume: "音量",
+        addtohomescreen: "把Peko按钮添加到主屏幕",
+        add: "添加",
+        dontneed: "不需要",
+        addtohomescreeninfo: "本站支持PWA，添加到主屏幕就可以像普通APP一样，即使没有网络也可以使用！"
     }
 }

@@ -30,5 +30,9 @@
         generate: "生成する",
         helpdevelope: "このウェブサイトの改善にご協力ください",
         volume: "ボリューム",
+        addtohomescreen: "ホーム画面にぺこらボタンを追加する",
+        add: "追加",
+        dontneed: "必要ない",
+        addtohomescreeninfo: "このウェブサイトはPWAをサポートしています。オフラインでもホーム画面に追加すると、通常のアプリとしてアクセスできます"
     }
 }
