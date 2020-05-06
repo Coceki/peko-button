@@ -77,8 +77,8 @@
     </v-row>
     <!---帮助文本--->
     <v-row>
-      <v-col cols="12">
-        <v-card class="pa-4">
+      <v-col cols="12" class="ma-0 pa-0">
+        <v-card class="ma-1 pa-4">
           <p class="headline font-weight-blod">
             <v-icon large color="red">mdi-party-popper</v-icon>
             {{$t("ui.info")}}
@@ -89,8 +89,8 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12">
-        <v-card class="pa-4">
+      <v-col cols="12" class="ma-0 pa-0">
+        <v-card class="ma-1 pa-4" >
           <p class="headline font-weight-blod">
             <v-icon large color="primary">mdi-help-circle</v-icon>
             {{$t("ui.helptitle")}}
