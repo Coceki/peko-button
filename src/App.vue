@@ -90,6 +90,13 @@ export default {
     //
   }),
   mounted(){
+    let timeNow = new Date();
+    let hours = timeNow.getHours();
+    if (hours<6||hours>18){//自动触发夜间模式
+      this.$store.commit("change_dark_mode");
+      this.$vuetify.theme.dark = this.$store.state.dark_mode;
+      window.console.log("success")
+    }
     window.onbeforeinstallprompt = (e) => {     //当浏览器触发横幅显示事件
                 window.console.log(e);
                 this.prompt = true;

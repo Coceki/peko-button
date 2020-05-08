@@ -2,8 +2,8 @@
   <v-app-bar
         :collapse-on-scroll="$vuetify.breakpoint.smAndDown"
         fixed
+        :color="night"
         dark
-        color=primary  
         :elevate-on-scroll="$vuetify.breakpoint.mdAndUp"
       >
       <v-menu  transition="slide-y-transition" bottom offset-y>
@@ -86,6 +86,17 @@ export default {
       },
       
       },
+    night:{
+      get: function() {
+        if(this.$vuetify.theme.dark){
+          return "grey darken-4";
+        }else{
+          return "primary"
+        }
+      },
+      
+      },
+    
     }
 }
 </script>

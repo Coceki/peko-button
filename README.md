@@ -46,7 +46,7 @@
 代码：  
 * [Coceki](https://space.bilibili.com/11229533)  
 
-素材提供：  
-* [Coceki](https://space.bilibili.com/11229533)
+特别感谢：  
+* [野兔子同好会](https://space.bilibili.com/2469920)
 * [昭和歌姬夏半首](https://space.bilibili.com/114298950)
 * [Richard_Al](https://space.bilibili.com/34401008)

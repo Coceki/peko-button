@@ -258,11 +258,7 @@ export default {
       let repeat = this.repeatmode;
       audio.preload = true;
       audio.loop = false;
-      if(this.$i18n.locale=='zhHans'){
-        audio.src="http://47.100.35.226/voices/"+arry[i].path;//大陆地区网络优化
-      }else{
-        audio.src="voices/"+arry[i].path;
-      }
+      audio.src="voices/"+arry[i].path;
       audio.volume=this.volume/100;
       audio.play();
       audio.addEventListener('ended', playEndedHandler, false); 
