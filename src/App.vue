@@ -56,6 +56,12 @@
                     {{$t("ui.cridits")}}
                   </v-row>
                   <v-row>
+                    <p>{{$t("ui.friendlinks")}}</p>
+                    <div class="ma-0 pa-0">
+                    <v-btn class="ma-1" v-for="link in links" :key="link.name" depressed :color="link.color" @click="See(link.href)">{{link.name}}</v-btn>
+                    </div>
+                  </v-row>
+                  <v-row>
                     {{$t("ui.developerinfo")}}
                   </v-row>
                 </v-container>
@@ -87,6 +93,38 @@ export default {
     prompt:false,
     deferred:null,
     addtoscreendialog:false,
+    links:[
+      {
+        name:"VTuber按钮合集",
+        href:"https://vtbbtn.org/",
+        color:"orange lighten-1"
+      },
+      {
+        name:"夸按钮/あくあボタン",
+        href:"https://aquaminato.moe/",
+        color:"purple lighten-2"
+      },
+      {
+        name:"狐按钮/フブキボタン",
+        href:"https://sfubuki.moe/",
+        color:"blue lighten-2"
+      },
+      {
+        name:"祭按钮/まつりボタン",
+        href:"https://natsuiromatsuri.moe/",
+        color:"orange darken-1"
+      },
+      {
+        name:"狼按钮/ミオボタン",
+        href:"https://ookamimio.org/",
+        color:"black"
+      },
+      {
+        name:"余按钮/なきりあやめボタン",
+        href:"https://nakiriayame.moe/",
+        color:"red darken-1"
+      },
+    ],
     //
   }),
   mounted(){
