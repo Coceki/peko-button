@@ -124,6 +124,11 @@ export default {
         href:"https://nakiriayame.moe/",
         color:"red darken-1"
       },
+      {
+        name:"狗按钮/ころねボタン",
+        href:"https://korone.icu/",
+        color:"brown darken-1"
+      },
     ],
     //
   }),

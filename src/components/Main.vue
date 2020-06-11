@@ -61,6 +61,7 @@
     <v-row class="mt-5" align="center" justify="center">
       <div class="text-center display-1 font-weight-bold">{{$t("ui.title")}}</div>
     </v-row>
+    
     <v-row align="center" justify="center">
       <v-switch v-model="orderplaymode" inset color="secondary" :label="$t('ui.openorderplaymode')"></v-switch>
       <v-badge
@@ -74,6 +75,15 @@
       <v-btn disabled class="ma-2" raised color="secondary">{{$t("ui.pekolanguage")}}</v-btn>
       <!-- </router-link> -->
       </v-badge>
+    </v-row>
+    <v-row class="pa-1">
+
+      <div id="fluntUIcoming" class="pa-5">
+        
+        <p class="font-weight-blod" id="fluntUItext"><v-icon large color="primary" class="mr-4">mdi-git</v-icon>一个全新的版本正在开发</p>
+        <p id="fluntinfo">这个页面是我新手时期写的，正在进行重构，届时会有全新的UI设计，更多的实用功能，尽情期待</p>
+      </div>
+     
     </v-row>
     <!---帮助文本--->
     <v-row>
@@ -308,5 +318,23 @@ export default {
 }
 #volumeM{
   z-index: 999;
+}
+#fluntUIcoming{
+  border-radius: 10px;
+  width: 100%;
+background: linear-gradient(135deg,rgba(246,246,246,1)0%,rgba(255,255,255,1)100%);
+box-shadow: -4px -4px 10px -8px rgba(255,255, 255, 1),4px 4px 10px -8px rgba(0,0,0, .3);
+}
+#fluntUItext{
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #999;
+  font-size: 24px;
+}
+#fluntinfo{
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #999;
+  font-size: 16px;
 }
 </style>
