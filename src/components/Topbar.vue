@@ -8,9 +8,9 @@
       >
       <v-menu  transition="slide-y-transition" bottom offset-y>
         <template v-slot:activator="{on:menu}">
-      <v-app-bar-nav-icon v-on="menu" v-show="$vuetify.breakpoint.smAndDown"></v-app-bar-nav-icon>
-      </template>
-      <v-list>
+          <v-app-bar-nav-icon v-on="menu" v-show="$vuetify.breakpoint.smAndDown"></v-app-bar-nav-icon>
+        </template>
+        <v-list>
           <v-list-item @click="See('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ')">
             <v-list-item-title>
               <v-icon left color="red">mdi-youtube</v-icon>Pekora Ch. 兎田ぺこら
@@ -27,25 +27,28 @@
               <v-icon left color="black">mdi-github</v-icon>{{$t("ui.helpdevelope")}}
             </v-list-item-title>
           </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              {{$t("ui.language")}}
+            </v-list-item-title>
+          </v-list-item>
         </v-list>
       </v-menu>
-        <v-toolbar-title>{{$t("ui.title")}}</v-toolbar-title>
-          <v-btn v-if="$vuetify.breakpoint.mdAndUp" class="ml-4 text-capitalize" color="red" @click="See('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ')"><v-icon left>mdi-youtube</v-icon>Pekora Ch. 兎田ぺこら</v-btn>
-          <v-btn v-if="$vuetify.breakpoint.mdAndUp" class="ml-4 text-lowercase" color="blue" @click="See('https://twitter.com/usadapekora')"><v-icon left>mdi-twitter</v-icon>@usadapekora</v-btn>
-        <v-spacer></v-spacer>
-         <v-btn  v-if="$vuetify.breakpoint.mdAndUp" @click="See('https://github.com/Coceki/peko-button')"><v-icon left>mdi-github</v-icon>{{$t("ui.helpdevelope")}}</v-btn>
-        <v-fab-transition>
-            <v-btn v-on="on" fab icon @click="DarkMode()" >
-              <v-icon>{{darkmodeicon}}</v-icon>
+      <v-toolbar-title>{{$t("ui.title")}}</v-toolbar-title>
+      <v-btn v-if="$vuetify.breakpoint.mdAndUp" class="ml-4 text-capitalize" color="red" @click="See('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ')"><v-icon left>mdi-youtube</v-icon>Pekora Ch. 兎田ぺこら</v-btn>
+      <v-btn v-if="$vuetify.breakpoint.mdAndUp" class="ml-4 text-lowercase" color="blue" @click="See('https://twitter.com/usadapekora')"><v-icon left>mdi-twitter</v-icon>@usadapekora</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn  v-if="$vuetify.breakpoint.mdAndUp" @click="See('https://github.com/Coceki/peko-button')"><v-icon left>mdi-github</v-icon>{{$t("ui.helpdevelope")}}</v-btn>
+      <v-btn v-on="on" fab icon @click="DarkMode()" >
+        <v-icon>{{darkmodeicon}}</v-icon>
+      </v-btn>
+      <v-menu  transition="slide-y-transition" bottom offset-y>
+        <template v-slot:activator="{on:menu}">
+          <v-fab-transition>
+            <v-btn v-on="menu" fab icon>
+              <v-icon>mdi-earth</v-icon>
             </v-btn>
           </v-fab-transition>
-        <v-menu  transition="slide-y-transition" bottom offset-y>
-        <template v-slot:activator="{on:menu}">
-              <v-fab-transition>
-                <v-btn v-on="menu" fab icon>
-                  <v-icon>mdi-earth</v-icon>
-                </v-btn>
-              </v-fab-transition>
         </template>
         <v-list>
           <v-list-item v-for="(lang, i) in langs" :key="i" :disabled="!lang.isready" @click="ChangeLang(lang.src)">
@@ -53,8 +56,7 @@
           </v-list-item>
         </v-list>
       </v-menu>
-      
-      </v-app-bar>
+  </v-app-bar>
 </template>
 
 <script>
@@ -62,7 +64,7 @@ export default {
   data:()=>({
     langs: [
       { title: "简体中文", src: "zhHans",isready:true},
-      { title: "English(Coming Soon)", src: "en",isready:false },
+      { title: "English", src: "en",isready:true },
       { title: "日本語(ベータ版)", src: "ja",isready:true }
     ],
   }),

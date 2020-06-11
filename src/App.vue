@@ -53,7 +53,10 @@
                     <v-btn icon @click="See('https://github.com/Coceki/peko-button')"><v-icon>mdi-github</v-icon></v-btn>
                   </v-row>
                   <v-row>
-                    {{$t("ui.cridits")}}
+                    {{$t("ui.credits")}}
+                  </v-row>
+                  <v-row>
+                    {{$t("ui.translationCredits")}}
                   </v-row>
                   <v-row>
                     <p>{{$t("ui.friendlinks")}}</p>
