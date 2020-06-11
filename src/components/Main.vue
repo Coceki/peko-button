@@ -127,6 +127,16 @@
                 @click="play(voice)"
               >{{voice.translation.Japanese}}</v-btn>
             </v-row>
+            <v-row no-gutters v-else-if="$i18n.locale=='en'">
+              <v-btn
+                class="ma-1 pa-1"
+                v-for="voice in group.voicelist"
+                :key="voice.name"
+                raised
+                color="secondary"
+                @click="play(voice)"
+              >{{voice.translation.English}}</v-btn>
+            </v-row>
           </v-container>
         </v-card>
       </v-col>
