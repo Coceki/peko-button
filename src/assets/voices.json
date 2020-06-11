@@ -303,7 +303,8 @@
             "name": "语气",
             "translation": {
                 "Chinese": "语气",
-                "Japanese": "気分"
+                "Japanese": "気分",
+                "English": "Emotion"
             },
             "voicelist": [{
                     "name": "哼~",
@@ -339,6 +340,15 @@
                         "Chinese": "巴布~巴布巴布~",
                         "Japanese": "babu~babubau~",
                         "English": "babu~babubau~"
+                    }
+                },
+                {
+                    "name": "PEKOPEKOPEKOPEKO",
+                    "path": "PEKOPEKOPEKOPEKO.wav",
+                    "translation": {
+                        "Chinese": "PEKOPEKOPEKOPEKO",
+                        "Japanese": "PEKOPEKOPEKOPEKO",
+                        "English": "PEKOPEKOPEKOPEKO"
                     }
                 },
                 {
