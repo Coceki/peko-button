@@ -98,7 +98,7 @@ export default {
     addtoscreendialog:false,
     links:[
       {
-        name:"VTuber按钮合集",
+        name:"VTuber按钮合集/vtbBtn",
         href:"https://vtbbtn.org/",
         color:"orange lighten-1"
       },

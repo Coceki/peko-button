@@ -35,6 +35,7 @@
         add: "追加",
         dontneed: "必要ない",
         addtohomescreeninfo: "このウェブサイトはPWAをサポートしています。オフラインでもホーム画面に追加すると、通常のアプリとしてアクセスできます",
-        friendlinks: "リンク集"
+        friendlinks: "リンク集",
+        newversion: "A brand new version is on the way"
     }
 }

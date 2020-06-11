@@ -35,6 +35,7 @@ module.exports = {
         add: "Add",
         dontneed: "Later",
         addtohomescreeninfo: "This site supports PWA. You can add this sit to the home screen like normal apps and use it offline.",
-        friendlinks: "friend links"
+        friendlinks: "friend links",
+        newversion: "A brand new version is on the way"
     }
 }

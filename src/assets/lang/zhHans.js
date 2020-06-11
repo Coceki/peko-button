@@ -16,7 +16,7 @@ module.exports = {
         orderplaymodehelp: "序列播放食用方法",
         developerinfo: "本站为爱好者创作，与Hololive官方无关",
         repeatmode: "不要停下来啊（循环序列）",
-        betainfo: "更新日志：2020.5.8 支持PWA，夜晚会自动切换成黑色调，日语版已实装，点击右上角小地球切换，作者日语N114514，有的地方真的听不出了，有错误请在Github指出，谢谢大家支持",
+        betainfo: "更新日志：2020.6.11,新增英语版，感谢：HoloLive Moments，点击右上角小地球切换，作者日语N114514，有的地方真的听不出了，有错误请在Github指出，谢谢大家支持",
         info: "恭喜兔田佩克拉30万订阅达成！",
         developer: "作者：Coceki",
         credits: "特别感谢：野兔子同好会 Richard_Al 昭和歌姬夏半首 ",
@@ -35,6 +35,7 @@ module.exports = {
         add: "添加",
         dontneed: "不需要",
         addtohomescreeninfo: "本站支持PWA，添加到主屏幕就可以像普通APP一样，即使没有网络也可以使用！",
-        friendlinks: "友情链接"
+        friendlinks: "友情链接",
+        newversion: "一个全新新版本开发中"
     }
 }

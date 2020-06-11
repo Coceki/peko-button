@@ -1,7 +1,8 @@
 # Peko-button
+## 正在开发一个重制版，会代替现有项目  
 
-注意：该项目刚刚启动，还未完善，请大佬轻喷，我日语本当🔨，有错误请指出，素材投稿请参考 如何参与开发，Bug与建议请直接发issue  
-  
+注意：~~该项目刚刚启动~~，还未完善，请大佬轻喷，我日语本当🔨(顺便恰日语翻译)，有错误请指出，素材投稿请参考 如何参与开发，Bug与建议请直接发issue  
+
 
 技术交流QQ群：1082177867（为了防止小鬼，群问题为本项目第一次commit的时间，格式为yyyy.mm.dd,有0不需要补0） ~~（什么都不会进来吹吹水也行）~~  
 ## 项目说明
@@ -46,7 +47,11 @@
 代码：  
 * [Coceki](https://space.bilibili.com/11229533)  
 
+英语翻译：
+* [HoloLive Moments](https://www.youtube.com/channel/UCK4adPCSc8U1mhaJYbzZ-7w)
+
 特别感谢：  
 * [野兔子同好会](https://space.bilibili.com/2469920)
 * [昭和歌姬夏半首](https://space.bilibili.com/114298950)
 * [Richard_Al](https://space.bilibili.com/34401008)
+

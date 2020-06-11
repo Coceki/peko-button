@@ -27,11 +27,7 @@
               <v-icon left color="black">mdi-github</v-icon>{{$t("ui.helpdevelope")}}
             </v-list-item-title>
           </v-list-item>
-          <v-list-item>
-            <v-list-item-title>
-              {{$t("ui.language")}}
-            </v-list-item-title>
-          </v-list-item>
+
         </v-list>
       </v-menu>
       <v-toolbar-title>{{$t("ui.title")}}</v-toolbar-title>

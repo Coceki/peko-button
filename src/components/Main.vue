@@ -64,24 +64,23 @@
     
     <v-row align="center" justify="center">
       <v-switch v-model="orderplaymode" inset color="secondary" :label="$t('ui.openorderplaymode')"></v-switch>
-      <v-badge
+      <!-- <v-badge
         color="primary"
         :content="this.$t('ui.beta')"
         overlap
         offset-x=40
         offset-y=20
-      >
+      > -->
       <!-- <router-link to="/pekolanguage" class="a"> -->
-      <v-btn disabled class="ma-2" raised color="secondary">{{$t("ui.pekolanguage")}}</v-btn>
+      <!-- <v-btn disabled class="ma-2" raised color="secondary">{{$t("ui.pekolanguage")}}</v-btn> -->
       <!-- </router-link> -->
-      </v-badge>
+      <!-- </v-badge> -->
     </v-row>
     <v-row class="pa-1">
 
       <div id="fluntUIcoming" class="pa-5">
         
-        <p class="font-weight-blod" id="fluntUItext"><v-icon large color="primary" class="mr-4">mdi-git</v-icon>一个全新的版本正在开发</p>
-        <p id="fluntinfo">这个页面是我新手时期写的，正在进行重构，届时会有全新的UI设计，更多的实用功能，尽情期待</p>
+        <p class="font-weight-blod" id="fluntUItext"><v-icon large color="primary" class="mr-4">mdi-git</v-icon>{{$t("ui.newversion")}}</p>
       </div>
      
     </v-row>
@@ -116,10 +115,11 @@
         <v-card class="ma-1 pa-0">
           <v-card-title v-if="$i18n.locale=='zhHans'">{{group.translation.Chinese}}</v-card-title>
           <v-card-title v-else-if="$i18n.locale=='ja'">{{group.translation.Japanese}}</v-card-title>
+          <v-card-title v-else-if="$i18n.locale=='en'">{{group.translation.English}}</v-card-title>
           <v-container>
             <v-row no-gutters v-if="$i18n.locale=='zhHans'">
               <v-btn
-                class="ma-2 pa-1"
+                class="ma-2 btn"
                 v-for="voice in group.voicelist"
                 :key="voice.name"
                 raised
@@ -129,7 +129,7 @@
             </v-row>
             <v-row no-gutters v-else-if="$i18n.locale=='ja'">
               <v-btn
-                class="ma-1 pa-1"
+                class="ma-1 btn"
                 v-for="voice in group.voicelist"
                 :key="voice.name"
                 raised
@@ -139,7 +139,7 @@
             </v-row>
             <v-row no-gutters v-else-if="$i18n.locale=='en'">
               <v-btn
-                class="ma-1 pa-1"
+                class="ma-1 btn"
                 v-for="voice in group.voicelist"
                 :key="voice.name"
                 raised
@@ -175,6 +175,18 @@
       <v-card v-if="$i18n.locale=='ja'" class="pa-1">
         <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
         <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.Japanese}}</v-chip>
+        <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
+        <v-card-actions v-if="orderlist.length>0">
+          <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
+          <v-btn text color="secondary" @click="stopplay">{{$t("ui.stopplay")}}</v-btn>
+          <v-divider></v-divider>
+          <v-btn text color="red" @click="resetorder">{{$t("ui.resetorder")}}</v-btn>
+        </v-card-actions> 
+        <p v-else>{{$t("ui.listempty")}}</p>     
+      </v-card>
+      <v-card v-if="$i18n.locale=='en'" class="pa-1">
+        <p class="title font-weight-blod">{{$t("ui.orderlistnow")}}</p>
+        <v-chip v-for="(selected,index) in orderlist" :key="selected" class="ma-2" close color="secondary" text-color="white" @click:close="deletelist(index)" @click="playOnly(selected)">{{selected.translation.English}}</v-chip>
         <v-switch class="ml-3 mt-2" v-model="repeatmode" inset color="secondary" :label="$t('ui.repeatmode')"></v-switch>
         <v-card-actions v-if="orderlist.length>0">
           <v-btn raised color="primary" @click="orderplay">{{$t("ui.playthislist")}}</v-btn>
@@ -346,5 +358,13 @@ box-shadow: -4px -4px 10px -8px rgba(255,255, 255, 1),4px 4px 10px -8px rgba(0,0
   font-weight: normal;
   color: #999;
   font-size: 16px;
+}
+.btn{
+    max-width: 100%;
+  word-wrap: break-word !important;
+  word-break: break-all !important;
+  white-space: normal !important;
+  text-transform: none !important;
+  display: inline-block;
 }
 </style>
