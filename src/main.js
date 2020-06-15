@@ -10,8 +10,8 @@ import ja from './assets/lang/ja'
 import VueCookies from 'vue-cookies'
 import '@mdi/font/css/materialdesignicons.css'
 import './registerServiceWorker'
-Vue.use(VueCookies)
 
+Vue.use(VueCookies)
 Vue.config.productionTip = false
 Vue.use(VueI18n);
 const i18n = new VueI18n({
